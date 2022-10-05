@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(92,139,156);
+    min-height: 100vh;
+}
+
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+section img {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    pointer-events: none;
+}
+
+#birds_behind {
+    position: absolute;
+    top:5rem;
+    left:24%;
+    width: 9rem;
+    height: 10rem;
+    max-width: 20rem;
+    rotate: -19deg;
+    transition: .1s;
+}
+
+#birds_front {
+    position: absolute;
+    width:75%;
+    height:75%;
+    top:7rem;
+    left:12rem;
+
+}
+
+.text{
+    padding: 3rem;
+    background: rgb(14,32,46);
+}
+.text h3 {
+    color: rgb(133, 182, 213);
+    font-size: 2rem;
+    font-weight: 100;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.text p {
+    color: #fff;
+    margin-top:1rem;
+    font-family:'Courier New', Courier, monospace
+}

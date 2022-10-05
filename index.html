@@ -1,0 +1,97 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="script.js"></script> -->
+</head>
+
+<body>
+
+    <section>
+        <img src="./images/20498320_a8dr_05f3_210816.jpg" alt="img-err" id="bg_img">
+        <img src="./images/birds-png-png-explore-png-deviantart-24.png" alt="img" id="birds_behind">
+        <img src="./images/flock-birds-png-transparent-flock-birds-images-26.png" alt="img" id="birds_front">
+    </section>
+
+
+
+    <div class="text">
+        <h3>Parallax Scrolling</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam cumque nulla, numquam reiciendis, id
+            enim,
+            voluptate aut tenetur non aliquam vero est error beatae neque reprehenderit ullam eaque voluptatibus
+            accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, delectus explicabo id
+            deleniti placeat in iste libero ullam sapiente harum suscipit. Quasi laudantium consequatur ipsa aut vel,
+            eligendi tempora quis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, necessitatibus officia obcaecati sapiente
+            cupiditate pariatur excepturi corrupti repellendus ea dignissimos suscipit ipsum nam quam velit! Nemo,
+            voluptates id? Quo, facere?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur dolor mollitia dicta vero nam, saepe
+            sed velit, laudantium, reiciendis doloribus dolorum provident incidunt temporibus. Mollitia eum repudiandae
+            atque voluptatem voluptatibus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+            repudiandae optio, et accusantium cumque repellat distinctio non sapiente corporis fugit inventore quia,
+            laboriosam ad delectus, amet fugiat molestias beatae placeat!Lorem Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Natus, non omnis earum ea nostrum odit repellat aliquid dolor tenetur ex, nulla unde!
+            Repellendus, autem assumenda ut nulla mollitia exercitationem quaerat!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam cumque nulla, numquam reiciendis, id
+            enim,
+            voluptate aut tenetur non aliquam vero est error beatae neque reprehenderit ullam eaque voluptatibus
+            accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, delectus explicabo id
+            deleniti placeat in iste libero ullam sapiente harum suscipit. Quasi laudantium consequatur ipsa aut vel,
+            eligendi tempora quis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, necessitatibus officia obcaecati sapiente
+            cupiditate pariatur excepturi corrupti repellendus ea dignissimos suscipit ipsum nam quam velit! Nemo,
+            voluptates id? Quo, facere?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur dolor mollitia dicta vero nam, saepe
+            sed velit, laudantium, reiciendis doloribus dolorum provident incidunt temporibus. Mollitia eum repudiandae
+            atque voluptatem voluptatibus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+            repudiandae optio, et accusantium cumque repellat distinctio non sapiente corporis fugit inventore quia,
+            laboriosam ad delectus, amet fugiat molestias beatae placeat!Lorem Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Natus, non omnis earum ea nostrum odit repellat aliquid dolor tenetur ex, nulla unde!
+            Repellendus, autem assumenda ut nulla mollitia exercitationem quaerat!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam cumque nulla, numquam reiciendis, id
+            enim,
+            voluptate aut tenetur non aliquam vero est error beatae neque reprehenderit ullam eaque voluptatibus
+            accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, delectus explicabo id
+            deleniti placeat in iste libero ullam sapiente harum suscipit. Quasi laudantium consequatur ipsa aut vel,
+            eligendi tempora quis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, necessitatibus officia obcaecati sapiente
+            cupiditate pariatur excepturi corrupti repellendus ea dignissimos suscipit ipsum nam quam velit! Nemo,
+            voluptates id? Quo, facere?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur dolor mollitia dicta vero nam, saepe
+            sed velit, laudantium, reiciendis doloribus dolorum provident incidunt temporibus. Mollitia eum repudiandae
+            atque voluptatem voluptatibus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+            repudiandae optio, et accusantium cumque repellat distinctio non sapiente corporis fugit inventore quia,
+            laboriosam ad delectus, amet fugiat molestias beatae placeat!Lorem Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Natus, non omnis earum ea nostrum odit repellat aliquid dolor tenetur ex, nulla unde!
+            Repellendus, autem assumenda ut nulla mollitia exercitationem quaerat!
+        </p>
+
+    </div>
+
+
+
+    <script>
+        // let bg = document.getElementById('bg_image')
+        let birds_front = document.getElementById('birds_front')
+        let birds_background = document.getElementById('birds_behind')
+
+        window.addEventListener('scroll', () => {
+            console.log(window.scrollY)
+            birds_background.style.marginLeft = window.scrollY * 0.3 + 'px'
+            birds_front.style.marginLeft = window.scrollY * 0.12 + 'px'
+        });
+
+    </script>
+</body>
+
+</html>
